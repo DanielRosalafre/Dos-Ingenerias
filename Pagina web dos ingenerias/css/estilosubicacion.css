@@ -1,0 +1,180 @@
+/* Estilos para la página de ubicación */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+/* Encabezado */
+
+header {
+  background-image: linear-gradient(to bottom, #20305B, #344E96);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative; /* Para posicionar correctamente la wave */
+}
+
+.wave {
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.wave svg {
+  height: 100%;
+  width: 100%;
+}
+
+.wave path {
+  fill: rgba(255, 255, 255, 0.8); /* Color de la wave */
+}
+
+.header-content {
+  max-width: 800px;
+}
+
+.titulo {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.direccion {
+  font-size: 24px;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mapa */
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+.mapa {
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.mapa iframe:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dirección */
+
+.direccion {
+  margin-top: 20px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2f323a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.content-foo {
+  margin: 0 20px;
+}
+
+.content-foo h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #9e9797;
+}
+
+.content-foo p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.titulo-final {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 36px;
+  }
+
+  .direccion {
+    font-size: 18px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .mapa iframe {
+    height: 300px;
+  }
+
+  .contenedor-footer {
+    flex-wrap: wrap;
+  }
+
+  .content-foo {
+    margin: 10px 0;
+  }
+
+  .titulo-final {
+    font-size: 18px;
+  }
+}
+
+/* Animaciones */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ubicacion {
+  animation: fadeInUp 1s ease;
+}

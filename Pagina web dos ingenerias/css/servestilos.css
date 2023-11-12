@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-image: linear-gradient(to bottom, #20305B, #344E96);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.titulo {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #344E96;
+}
+
+nav a:hover {
+  background-color: #20305B;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.servicio .contenido {
+  padding: 20px;
+}
+
+.servicio h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #20305B;
+}
+
+.servicio p {
+  font-size: 16px;
+  color: #555;
+}
+
+.servicio .boton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #20305B;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.servicio .boton:hover {
+  background-color: #344E96;
+}
+
+/* Footer */
+footer {
+  background-color: #20305B;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ... Tus animaciones llamativas ... */
+
+@media screen and (max-width: 768px) {
+  /* Ajustes para dispositivos móviles */
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+  }
+
+  nav {
+      margin-top: 10px;
+  }
+
+  .titulo {
+      font-size: 20px;
+  }
+
+  main {
+      padding: 10px;
+  }
+
+  .servicio {
+      width: 100%;
+  }
+}
